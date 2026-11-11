@@ -1,7 +1,6 @@
 import React from "react";
 import { ScrollView, StyleSheet, Text, View } from "react-native";
 
-// Componente local de Tarjeta de Experiencia siguiendo la estructura del profesor
 type ExperienciaProps = {
     puesto: string;
     empresa: string;
@@ -20,28 +19,25 @@ const TarjetaExperiencia = ({ puesto, empresa, periodo, descripcion }: Experienc
     );
 };
 
-// Pantalla principal que renderiza las tarjetas con datos de prueba
 const experiencia = () => {
     return (
         <ScrollView style={estilos.contenedor} contentContainerStyle={estilos.contenido}>
             <View style={estilos.cabecera}>
-                <Text style={estilos.tituloPantalla}>Experiencia Laboral</Text>
+                <Text style={estilos.tituloPantalla}>Proyectos y Experiencia</Text>
             </View>
 
-            {/* Tarjeta de Experiencia 1 */}
             <TarjetaExperiencia 
-                puesto="Desarrollador Frontend Trainee"
-                empresa="Tech Solutions Bogotá"
-                periodo="2024 - Presente"
-                descripcion="Apoyo en el desarrollo de módulos web utilizando React, JavaScript y maquetación adaptativa con CSS. Colaboración directa en el mantenimiento de interfaces."
+                puesto="Desarrollador Full-Stack (Proyecto Académico)"
+                empresa="Aplicación Web ONUFAST"
+                periodo="2026"
+                descripcion="Diseño y desarrollo del backend en Python FastAPI con una base de datos PostgreSQL relacional (onufast_db) y frontend integrado en React asistido por Vite."
             />
 
-            {/* Tarjeta de Experiencia 2 */}
             <TarjetaExperiencia 
-                puesto="Pasante de Sistemas / Soporte"
-                empresa="Sistemas de Occidente"
-                periodo="2023 (6 meses)"
-                descripcion="Mantenimiento preventivo de equipos de cómputo, configuración de redes locales y asistencia técnica básica a los usuarios de la organización."
+                puesto="Especialista en Modelado Relacional y Calidad"
+                empresa="Feria de Conocimiento CGMLTI"
+                periodo="Septiembre 2026"
+                descripcion="Exposición de competencias en la normalización de bases de datos hasta la Tercera Forma Normal (3FN), modelado gráfico estructural en draw.io y optimización de datasets complejos."
             />
         </ScrollView>
     );
@@ -54,7 +50,6 @@ const estilos = StyleSheet.create({
     contenido: { padding: 20 },
     cabecera: { marginBottom: 12 },
     tituloPantalla: { fontSize: 22, fontWeight: "bold", color: "#0f172a" },
-    // Estilos de la tarjeta alineados al diseño de la guía
     tarjeta: { padding: 16, borderRadius: 10, marginVertical: 8, borderWidth: 1, backgroundColor: "#ffffff", borderColor: "#ccc" },
     puesto: { fontSize: 16, fontWeight: "bold", color: "#0f172a" },
     empresa: { fontSize: 14, color: "#2563eb", fontWeight: "600", marginVertical: 2 },

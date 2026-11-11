@@ -29,7 +29,7 @@ export default TarjetaEstudio;
 const estilos = StyleSheet.create({
     tarjeta: { padding: 16, borderRadius: 10, marginVertical: 8, borderWidth: 1 },
     finalizado: { backgroundColor: "#ffffff", borderColor: "#ccc" },
-    enCurso: { backgroundColor: "#eef2ff", borderColor: "#6366f1" }, // ¡Otro color!
+    enCurso: { backgroundColor: "#eef2ff", borderColor: "#6366f1" }, 
     titulo: { fontSize: 16, fontWeight: "bold" },
     subtitulo: { fontSize: 14, color: "#555" },
     anio: { fontSize: 12, color: "#888" },

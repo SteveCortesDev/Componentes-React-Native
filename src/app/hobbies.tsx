@@ -9,38 +9,35 @@ const hobbies = () => {
                 <Text style={estilos.tituloPantalla}>Mis Pasatiempos</Text>
             </View>
 
-            {/* Tarjeta de Hobby 1 con su Alerta */}
             <TarjetaHobby 
-                actividad="Programación y Proyectos Personales"
-                descripcion="Me apasiona dedicar tiempo libre a resolver retos de lógica algorítmica."
+                actividad="Videojuegos y Entretenimiento"
+                descripcion="Análisis de géneros de anime y gaming enfocado en títulos de estrategia y rol adaptados a PC y móvil."
                 onPress={() => 
                     Alert.alert(
-                        "Detalles del Hobby", 
-                        "Dedico unas 5 horas semanales a practicar lógica en HackerRank y a construir módulos experimentales en React Native para agilizar mi aprendizaje."
+                        "Detalles del Pasatiempo", 
+                        "Disfruto jugar Genshin Impact en laptop, Blood Strike y administrar mi aldea en Clash of Clans. Adicionalmente, consumo y analizo series de anime de romance, comedia y drama."
                     )
                 }
             />
 
-            {/* Tarjeta de Hobby 2 con su Alerta */}
             <TarjetaHobby 
-                actividad="Videojuegos de Estrategia"
-                descripcion="Disfruto jugar partidas que requieran análisis crítico y coordinación rápida."
+                actividad="Running y Estilo de Vida"
+                descripcion="Entrenamientos deportivos al aire libre e investigación de rutinas de cuidado personal."
                 onPress={() => 
                     Alert.alert(
-                        "Detalles del Hobby", 
-                        "Juego principalmente ajedrez rápido y títulos de estrategia en tiempo real. Me ayuda a desarrollar pensamiento lógico bajo presión y toma de decisiones."
+                        "Detalles del Pasatiempo", 
+                        "Practico atletismo regular recorriendo rutas locales en la ciudad de Bogotá, con una meta fija de completar 10 kilómetros continuos los días viernes."
                     )
                 }
             />
 
-            {/* Tarjeta de Hobby 3 con su Alerta */}
             <TarjetaHobby 
-                actividad="Lectura y Aprendizaje Autónomo"
-                descripcion="Frecuentemente leo artículos técnicos y documentación oficial de frameworks."
+                actividad="Investigación en Domótica y Automatización"
+                descripcion="Estudio técnico de ecosistemas integrados y sensores inteligentes para el hogar."
                 onPress={() => 
                     Alert.alert(
-                        "Detalles del Hobby", 
-                        "Sigo de cerca los blogs oficiales de Expo y la documentación de React Navigation para mantenerme al día con los cambios de arquitectura de software."
+                        "Detalles del Pasatiempo", 
+                        "Diseño planos lógicos para setups de automatización residencial integrando protocolos ZigBee, iluminación inteligente, persianas motorizadas y modos de seguridad digital."
                     )
                 }
             />

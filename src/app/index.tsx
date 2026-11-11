@@ -8,51 +8,53 @@ const inicio = () => {
       style={estilos.contenedor}
       contentContainerStyle={estilos.contenido}
     >
+      {/* Sección del Perfil / Avatar */}
       <View style={estilos.avatarContenedor}>
         <Ionicons name="person-circle" size={100} color="#2563eb" />
-        <Text style={estilos.nombre}>Pepito Pérez Gómez</Text>
+        <Text style={estilos.nombre}>Daniel Pulido</Text>
         <Text style={estilos.profesion}>Tecnólogo en ADSO</Text>
       </View>
 
+      {/* Sección Perfil Profesional */}
       <View style={estilos.seccion}>
         <Text style={estilos.subtitulo}>Perfil Profesional</Text>
         <Text style={estilos.parrafo}>
-          Aprendiz del SENA apasionado por el desarrollo de aplicaciones móviles
-          y web. Con habilidades en React Native, JavaScript, HTML5, Python y
-          gestión de bases de datos relacionales y no relacionales.
+          Aprendiz del SENA en Bogotá, enfocado en el Análisis y Desarrollo de Software (ADSO). 
+          Apasionado por los flujos de trabajo full-stack, modelado relacional y la calidad del software.
         </Text>
       </View>
 
+      {/* Sección de Contacto utilizando <MiBoton /> */}
       <View style={estilos.seccion}>
         <Text style={estilos.subtitulo}>Contacto</Text>
         
-        {/* Botón 1: Enviar Correo */}
+        {/* Enviar Correo */}
         <MiBoton
           textoBoton="Enviar Correo"
           nombreIcono="mail"
-          colorBoton="#2563eb"
+          colorBoton="#E8D464"
           onPress={() => 
-            Alert.alert("Contacto", "Correo: juan.perez@misena.edu.co")
+            Alert.alert("Contacto", "Correo Institucional: daniel.pulido@misena.edu.co")
           }
         />
 
-        {/* Botón 2: Llamar */}
+        {/* Llamar */}
         <MiBoton
           textoBoton="Llamar"
           nombreIcono="call"
-          colorBoton="#10b981"
+          colorBoton="#2563eb"
           onPress={() => 
-            Alert.alert("Contacto", "Teléfono: +57 300 123 4567")
+            Alert.alert("Contacto", "Llamando al Teléfono Celular de Daniel...")
           }
         />
 
-        {/* Botón 3: LinkedIn */}
+        {/* LinkedIn */}
         <MiBoton
-          textoBoton="LinkedIn"
+          textoBoton="Ver Perfil LinkedIn"
           nombreIcono="logo-linkedin"
           colorBoton="#0077b5"
           onPress={() => 
-            Alert.alert("Contacto", "Abriendo perfil de LinkedIn...")
+            Alert.alert("Contacto", "Redireccionando al perfil profesional de LinkedIn...")
           }
         />
       </View>
@@ -73,12 +75,7 @@ const estilos = StyleSheet.create({
     marginBottom: 16,
     elevation: 1,
   },
-  subtitulo: {
-    fontSize: 16,
-    fontWeight: "bold",
-    color: "#1e293b",
-    marginBottom: 8,
-  },
+  subtitulo: { fontSize: 16, fontWeight: "bold", color: "#1e293b", marginBottom: 8 },
   parrafo: { fontSize: 14, color: "#475569", lineHeight: 20 },
 });
 
