@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "@expo/vector-icons": "^15.1.1",
+    "expo-constants": "^58.0.15",
+    "expo-linking": "^58.0.16",
+    "expo-router": "^58.0.30",
+    "expo-status-bar": "^58.0.4",
+    "react-native-safe-area-context": "^5.11.1",
+    "react-native-screens": "^4.30.1"
+  }
+}

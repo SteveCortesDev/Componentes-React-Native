@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+
+# Expo files
+.expo/
+dist/
+web-build/
+
+# Expo Router generated types
+.expo-shared/
+.expo/
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Native build directories (if you use prebuild / expo run)
+android/
+ios/
+
+# Local environment variables
+.env*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+eslint-debug.log*
+
+# macOS system files
+.DS_Store
